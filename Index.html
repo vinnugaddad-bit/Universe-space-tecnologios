@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Universe Space Technologies</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: cyan;
+        }
+
+        button {
+            background-color: cyan;
+            color: black;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 250px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>UNIVERSE SPACE TECHNOLOGIES</h1>
+
+    <h2>Explore Our Universe</h2>
+
+    <p>Discover planets, stars and galaxies!</p>
+
+    <button onclick="showPhoto('Earth.jpg')">Earth</button>
+
+    <button onclick="showPhoto('Mars.jpg')">Mars</button>
+
+    <button onclick="showPhoto('Jupiter.jpg')">Jupiter</button>
+
+    <br>
+
+    <img id="planetPhoto" style="display:none;">
+
+    <script>
+        function showPhoto(photoName) {
+            let photo = document.getElementById("planetPhoto");
+
+            photo.src = photoName;
+            photo.style.display = "inline-block";
+        }
+    </script>
+
+</body>
+</html>
